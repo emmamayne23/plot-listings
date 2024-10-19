@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Listings</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- link to the custom css -->
+    <link rel="stylesheet" href="/src/custom.css">
+
+    <!-- link for the font awesomes icons -->
+    <script src="https://kit.fontawesome.com/4c4d50e1df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <nav class="sticky top-0 py-6 px-20 flex justify-between items-center border-b border-gray-500">
+            <div>
+                <img src="./images/white-logo.png" alt="logo">
+            </div>
+            <ul class="flex uppercase items-center text-white tracking-wider font-medium">
+                <li class="mx-7 text-ash"><a href="./index.html">Home</a></li>
+                <li class="mx-7 hover:text-ash"><a href="./category.html">category</a></li>
+                <li class="mx-7 hover:text-ash"><a href="">listing</a></li>
+                <li class="mx-7 hover:text-ash"><a href="">contact us</a></li>
+            </ul>
+            <div id="but" class="bg-white rounded-md py-2 px-5 m-1 flex items-center justify-center cursor-pointer hover:bg-ash">
+                <i class="fa-solid fa-circle-plus fa-xl" style="color: #8d99af;"></i> &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tracking-wider">Add Your listing</span>
+            </div>
+        </nav>
+
+        <div class="mt-36 flex flex-col justify-center items-center tracking-wider">
+            <span class="text-white ">OVER 36,500+ ACTIVE LISTINGS</span>
+            <p class="text-white font-black text-5xl mt-5 text-center">Find Nearby Places & Things</p> 
+            <form action="">
+                <div class="flex divide-x divide-black p-16 " id="forms">
+                    <div class="bg-white py-6 px-20 rounded-l-lg">
+                        <select name="areas" id="areas">
+                            <option value="area">All Areas</option>
+                            <option value="village">Old Village</option>
+                            <option value="town">New Town</option>
+                            <option value="city">Modern City</option>
+                        </select>
+                    </div>
+                    <div class="bg-white py-6 px-20">
+                        <input class="outline-none" type="text" name="location" id="location" placeholder="Enter a Location" required>
+                    </div>
+                    <div class="bg-white py-6 px-20">
+                        <select name="price" id="price">
+                            <option value="range">Price Range</option>
+                            <option value="1er">$100 to $250</option>
+                            <option value="2em">$250 to $500</option>
+                            <option value="3em">$500 to $1000</option>
+                            <option value="4em">$1000 or more</option>
+                        </select>
+                    </div>
+                    <div class="bg-ash text-white py-6 px-16 rounded-r-lg cursor-pointer flex justify-between items-center" id="lin">
+                        <i class="fa-solid fa-magnifying-glass fa-md rounded-full mr-2"></i>
+                        <input class="cursor-pointer"  type="submit" value="Search Now">
+                    </div>
+                    
+                </div>
+            </form>
+
+            <div class="mb-40" id="links">
+                <ul class="text-white flex justify-center gap-20 items-center">
+                    <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 p-6 m-2"><img src="./images/search-icon-01.png" alt=""></div>Apartments</a></li>
+                    <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 p-6 m-2"><img src="./images/search-icon-02.png" alt=""></div> Food & Life</a></li>
+                    <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 px-5 py-7 m-2"><img src="./images/search-icon-03.png" alt=""></div>Cars</a></li>
+                    <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 p-6 m-2"><img src="./images/search-icon-04.png" alt=""></div>Shopping</a></li>
+                    <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 p-6 m-2"><img src="./images/search-icon-05.png" alt=""></div>Travelling</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main class="mb-40">
+        <div class="text-center mt-28 mb-28">
+            <h1 class="font-bold text-4xl mb-7">Popular Categories</h1>
+            <p class="text-ash text-base">CHECK THEM OUT</p>
+        </div>
+
+        <div class="bg-cyan-950 flex gap-5 mx-20 rounded-lg" id="popular">
+            <div class="mr-3">
+                <ul class="divide-y divide-black w-64">
+                    <li class="px-6 py-4 bg-cyan-950 rounded-tl-lg"><a href="" class="text-white flex justify-center items-center"><div class="rounded-full bg-white p-6 m-2"><img src="./images/search-icon-01.png" alt=""></div>Apartments</a></li>
+                    <li class="px-6 py-4 bg-ash"><a href="" class="text-white flex justify-center items-center"><div class="rounded-full bg-white p-6 m-2"><img src="./images/search-icon-02.png" alt=""></div>Food & Life</a></li>
+                    <li class="px-6 py-4 bg-ash"><a href="" class="text-white flex justify-center items-center"><div class="rounded-full bg-white px-6 py-8 m-2 "><img src="./images/search-icon-03.png" alt=""></div>Cars</a></li>
+                    <li class="px-6 py-4 bg-ash"><a href="" class="text-white flex justify-center items-center"><div class="rounded-full bg-white p-6 m-2"><img src="./images/search-icon-04.png" alt=""></div>Shopping</a></li>
+                    <li class="px-6 py-4 bg-ash rounded-bl-lg"><a href="" class="text-white flex justify-center items-center"><div class="rounded-full bg-white p-6 m-2"><img src="./images/search-icon-05.png" alt=""></div>Travelling</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="text-white p-2 mt-36">
+                <h1 class="font-bold text-2xl mb-10">One Of The Most Trending Stuffs Right Now!</h1>
+                <p class="leading-loose text-base mb-7">Plot Listing is a responsive Bootstrap 5 website template that included 4 different HTML pages. This template is provided by TemplateMo website. You can apply this layout for your static or dynamic CMS websites.</p>
+                <a href="" class="text-black bg-white rounded-md py-4 px-24 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Discover More</a>
+            </div>
+
+            <div class="flex items-center justify-center m-10">
+                <img src="./images/tabs-image-01.jpg" alt="" width="1500px" class="rounded-md">
+            </div>
+        </div>
+        
+        <div class="text-center mt-28 mb-28">
+            <h1 class="font-bold text-4xl mb-7">Recent Listing</h1>
+            <p class="text-ash text-base">CHECK THEM OUT</p>
+        </div>
+
+
+        <div class="border border-ash rounded-lg m-4 px-4 py-12">
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100 mb-4" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-01.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">1. First Apartment Unit </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(18) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$450 - $950 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>4 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+    
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100 mb-4" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-02.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">2. House of gaming </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(24) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Top Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$1450 - $3500 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>4 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+    
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-03.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">3. Secret Place House </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(18) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$450 - $950 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>3 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="border border-ash rounded-lg m-4 px-4 py-12">
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100 mb-4" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-04.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">4. Sunshine Forth Ap. </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(18) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$450 - $950 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>4 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+    
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100 mb-4" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-05.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">5. Best House of Town </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(24) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Top Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$1450 - $3500 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>4 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+    
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-06.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">6. Amazing Pool Villa </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(18) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$450 - $950 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>3 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="border border-ash rounded-lg m-4 px-4 py-12">
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100 mb-4" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-01.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">7. Sunny Apartment </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(18) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$450 - $950 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>4 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+    
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100 mb-4" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-02.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">8. 3rd House of gaming </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(24) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Top Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$1450 - $3500 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>4 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+    
+            <div class="flex gap-14 mx-10 rounded-lg bg-slate-100" id="info">
+                <div>
+                    <img class="rounded-l-lg" src="./images/listing-03.jpg" alt="">
+                </div>
+    
+                <div class="flex flex-col gap-6 justify-center relative" id="info-col">
+                    <div class="flex gap-5" id="mini-col">
+                        <div>
+                            <span class="text-2xl font-bold">9. Relaxing BBQ Villa </span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span class="spa">(18) Reviews</span>
+                        </div>
+                    </div>
+                    <span class="text-ash">by: Sale Agent</span>
+                    <div class="flex gap-2">
+                        <img class="bg-ash rounded-3xl p-2" src="./images/listing-icon-01.png" alt="">
+                        <span>$450 - $950 / month with taxes</span>
+                    </div>
+                    <span>Details: 2760 sq ft</span>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-02.png" alt="">
+                        <span>4 Bedrooms</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="./images/listing-icon-03.png" alt="">
+                        <span>3 Bathrooms</span>
+                    </div>
+    
+                    <a href="" class=" absolute right-0 bottom-12 text-black bg-white rounded-md py-3 px-4 w-48 text-base font-normal hover:bg-ash transition ease-in duration-300 hover:text-white"><i class="fa-regular fa-eye"></i> &nbsp;&nbsp;  Contact Now</a>
+                    
+    
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+
+    <hr>
+    <footer class="mt-20 mb-10">
+        <div class="flex justify-between mx-20 footer">
+            <div class="w-2/6 footer-1">
+                <img src="./images/black-logo.png" alt="" class="mb-6">
+                <p class="leading-loose text-base">If you consider that Plot Listing website is useful for your website, please support us a little via PayPal.If you consider that Plot Listing website is useful for your website, please support us a little via PayPal.</p>
+            </div>
+
+            <div>
+                <h1 class="text-ash font-bold text-xl mb-5 text-base">Helpful Links</h1>
+                <div class="flex justify-between gap-24">
+                    <div>
+                        <ul class="leading-loose text-base">
+                            <li class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash"><a href="./category.html">Categories</a></li>
+                            <li class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash"><a href="">Reviews</a></li>
+                            <li class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash"><a href="">Listing</a></li>
+                            <li class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash"><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="leading-loose text-base">
+                            <li><a href="" class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash">About Us</a></li>
+                            <li><a href="" class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash">Awards</a></li>
+                            <li><a href="" class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash">Useful Sites</a></li>
+                            <li><a href="" class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h1 class="text-ash font-bold text-xl mb-5 text-base">Contact Us</h1>
+                <p class="mb-5 text-base">27th Street of New Town, Digital Villa</p>
+                <div>
+                    <ul class="flex justify-between text-base">
+                        <li class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash"><a href="">010-020-0340</a></li>
+                        <li class="hover:text-ash transition ease-in duration-300 hover:border-b border-b-ash"><a href="">090-080-0760</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <hr>
+
+    <div class="text-base text-center my-10">
+        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.</p>
+        <p>Design: Emmanuel Ziem Yaan-Tol</p>
+    </div>
+
+
+    <script src="/src/script.js"></script>
+</body>
+</html>

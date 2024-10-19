@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-size: 14px;
+}
+
+header {
+    background-image: url(/public/images/banner-bg.jpg);
+    background-size: cover;
+}
+
+
+nav ul li {
+    transition: ease-in-out 0.3s;
+}
+
+nav #but:hover {
+    transition: ease-in-out 0.3s;
+    color: white;
+}
+
+nav #but:hover i {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+
+    html, body {
+        width: 100%;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 8px;
+        padding: 0;
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    form #forms {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+        padding: 40px;
+    }
+
+    form #forms div {
+        border: 1px solid black;
+        padding: 6px 100px 6px 15px;
+        border-radius: 8px;
+        max-width: 1024px;
+        border-color: rgb(184, 184, 184);
+        margin-bottom: 5px;
+    }
+
+    form #forms #lin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 15px;
+    }
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+
+    nav ul li {
+        font-size: 12px;
+    }
+
+    #links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #links ul {
+        margin: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    #popular {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #popular ul {
+        width: 100%;
+    }
+
+    #popular div:nth-child(2) {
+        padding: 40px;
+        margin: 0;
+    }
+
+    #popular a {
+        padding: 20px 120px;
+    }
+
+    #info {
+        width: 100%;
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #info-col {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+
+    #mini-col {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .spa {
+        position: absolute;
+        top: 52px;
+        right: 200px;
+        margin: 0;
+    }
+
+    #info-col a {
+        margin-right: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding: 2px 2px;
+    }
+
+    .footer .footer-1 img {
+        width: 50%;
+    }
+
+    .footer h1 {
+        text-align: center;
+    }
+
+    .footer .footer-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+
+
+
+}
+
+
+
