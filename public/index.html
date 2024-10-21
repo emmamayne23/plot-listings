@@ -15,11 +15,11 @@
 <body>
     <header>
         
-        <nav class="sticky top-0 py-6 px-20 flex justify-between items-center border-b border-gray-500">
+        <nav class="navbar sticky top-0 py-6 px-20 flex justify-between items-center border-b border-gray-500">
             <div>
                 <img src="./images/white-logo.png" alt="logo">
             </div>
-            <ul class="flex uppercase items-center text-white tracking-wider font-medium">
+            <ul class="nav-links flex uppercase items-center text-white tracking-wider font-medium">
                 <li class="mx-7 text-ash"><a href="./index.html">Home</a></li>
                 <li class="mx-7 hover:text-ash"><a href="./category.html">category</a></li>
                 <li class="mx-7 hover:text-ash"><a href="">listing</a></li>
@@ -29,8 +29,11 @@
                 <i class="fa-solid fa-circle-plus fa-xl" style="color: #8d99af;"></i> &nbsp;&nbsp;&nbsp;&nbsp;
                 <span class="tracking-wider">Add Your listing</span>
             </div>
+            <button type="button" class="menu-toggle text-white text-2xl hidden">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
-
+        <!--The form for the areas   -->
         <div class="mt-36 flex flex-col justify-center items-center tracking-wider">
             <span class="text-white ">OVER 36,500+ ACTIVE LISTINGS</span>
             <p class="text-white font-black text-5xl mt-5 text-center">Find Nearby Places & Things</p> 
@@ -64,7 +67,7 @@
                 </div>
             </form>
 
-            <div class="mb-40" id="links">
+            <div class="links mb-40" id="links">
                 <ul class="text-white flex justify-center gap-20 items-center">
                     <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 p-6 m-2"><img src="./images/search-icon-01.png" alt=""></div>Apartments</a></li>
                     <li class="text-center"><a href=""><div class="rounded-full bg-white hover:bg-cyan-950 transition ease-in duration-300 p-6 m-2"><img src="./images/search-icon-02.png" alt=""></div> Food & Life</a></li>
@@ -554,6 +557,6 @@
     </div>
 
 
-    <script src="/src/script.js"></script>
+    <script src="../src/script.js"></script>
 </body>
 </html>

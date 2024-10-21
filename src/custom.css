@@ -25,10 +25,83 @@ nav ul li {
 nav #but:hover {
     transition: ease-in-out 0.3s;
     color: white;
+    position: relative;
 }
 
 nav #but:hover i {
     color: white;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.scrollnav {
+    background-color: white;
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        line-height: 33px;
+        background-color: white;
+        width: 100%;
+        text-align: left;
+
+        /* display: none; */
+        height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    ul li {
+        color: black;
+        font-size: 15px !important;
+        text-align: left;
+        border-bottom: 1px solid black;
+        margin: 5px auto;
+        padding: 5px 25px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 30px;
+    } 
+    
+    .active-links {
+        height: 205px;
+        /* display: block; */
+    }
+
+    .links {
+        width: 100%; 
+        
+    }
+
+    .links ul li {
+        width: 90px;
+    }
+
+    .links ul li div {
+        width: 50%;
+    }
+
+    .links ul li a {
+        width: 50%;
+        font-size: 12px;
+    }
+    
 }
 
 @media (max-width: 1024px) {
